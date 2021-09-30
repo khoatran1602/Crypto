@@ -3,10 +3,14 @@
     <string name="user_name">User Name</string>
     <string name="password">Password</string>
     <string name="logo">Logo</string>
-    <string name="todo">TODO</string>
-    <string name="input_here">Input here</string>
-    <string name="result">Result</string>
     <string name="crypto">Crypto</string>
     <string name="currency">Currency</string>
     <string name="please_choose_what_you_want_to_do">Please, choose what you want to do</string>
+    <string name="todo">TODO</string>
+    <string name="result1">Result</string>
+    <string name="enter_here">Enter here</string>
+    <string name="selected_currency">Selected Currency</string>
+    <string name="input_here">Input here</string>
+    <string name="result">Result</string>
+    <string name="amount">Amount</string>
 </resources>

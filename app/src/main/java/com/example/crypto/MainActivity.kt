@@ -11,12 +11,15 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.Theme_Crypto)
         setContentView(R.layout.activity_main)
+
         val sharedPreferences = getSharedPreferences("com.example.app", Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
         val optionIntent = Intent(this, OptionActivity::class.java)
 
-        if (!sharedPreferences.getString("username", "").isNullOrEmpty() && !sharedPreferences.getString("password","").isNullOrEmpty()) {
+        if (!sharedPreferences.getString("username", "").isNullOrEmpty() &&
+            !sharedPreferences.getString("password","").isNullOrEmpty()) {
             startActivity(optionIntent)
         } else {
             Log.i("Khoa", "unsuccessful")
